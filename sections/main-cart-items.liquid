@@ -578,7 +578,7 @@
     let visibleCartItems = mediaclipCartApi.getMainAndNonMediaclipItems();
     for (let cartItem of visibleCartItems) {
       let quantityInputElement = document.querySelector(
-              `[data-mc-shopify-cart-item-line='${cartItem.identifier.line}'] input[name='updates[]'], select[name='updates[]']`
+              `[data-mc-shopify-cart-item-line='${cartItem.identifier.line}'] :is(input, select)[name='updates[]']`
       );
       quantityInputElement.addEventListener(
               "change",
