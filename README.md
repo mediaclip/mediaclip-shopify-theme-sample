@@ -51,7 +51,7 @@ checkoutButton.addEventListener('click', async (event) => {
   // Prevent default checkout behavior
   event.preventDefault();
   // Run validation
-  let validationResult = await mediaclipCartApi.executeMediaclipValidationAndFixCart(false);
+  let validationResult = await mediaclipCartApi.executeMediaclipValidationAndFixCart({ skipRerender: false });
   // Handle validation results
   // ...
 });

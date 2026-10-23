@@ -609,7 +609,7 @@
       checkoutButton.disabled = true;
 
       // Run validation
-      let validationResult = await mediaclipCartApi.executeMediaclipValidationAndFixCart(false);
+      let validationResult = await mediaclipCartApi.executeMediaclipValidationAndFixCart({ skipRerender: false });
       console.debug('Validation result', validationResult);
 
       // Interpret the validation result
