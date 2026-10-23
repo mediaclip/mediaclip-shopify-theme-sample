@@ -636,8 +636,8 @@
       null,
       (updatedSections) => {
         // replace the HTML with the re-rendered sections
-        document.getElementById("main-cart-items").innerHtml = updatedSections["main-cart-items"];
-        document.getElementById("cart-icon-bubble").innerHtml = updatedSections["cart-icon-bubble"];
+        document.getElementById("main-cart-items").innerHTML = updatedSections["main-cart-items"];
+        document.getElementById("cart-icon-bubble").innerHTML = updatedSections["cart-icon-bubble"];
         // subscribe to the quantity changes (see section Handle quantity changes)
         setupQuantityChangeButtons(mediaclipCartApi);
       }
