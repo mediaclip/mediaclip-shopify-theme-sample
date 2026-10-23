@@ -170,6 +170,12 @@
 
                       <a href="{{ item.url }}" class="cart-item__name h4 break">{{ item.product.title | escape }}</a>
 
+                      {%- if edit_project_url != blank -%}
+                        <p class="product-option">
+                          <a href="{{ edit_project_url }}" class="link">Edit project</a>
+                        </p>
+                      {%- endif -%}
+
                       {%- if item.original_price != item.final_price -%}
                         <div class="cart-item__discounted-prices">
                           <span class="visually-hidden">
