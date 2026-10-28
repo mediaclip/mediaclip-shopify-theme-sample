@@ -66,7 +66,7 @@ checkoutButton.addEventListener('click', async (event) => {
 
 ## Documentation
 
-For comprehensive details on the Mediaclip Shopify JavaScript Cart API, please refer to the [official Mediaclip documentation](https://docs.mediaclip.com/shopify/js-api/).
+For comprehensive details on the Mediaclip Shopify JavaScript Cart API, please refer to the [official Mediaclip documentation](https://doc.mediaclip.ca/shopify/integrator/js-api/).
 
 ## Support
 
